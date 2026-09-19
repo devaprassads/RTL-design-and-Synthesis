@@ -1,1 +1,1 @@
-# RTL-design-and-Syntheseis
+# RTL-design-and-Synthesis
