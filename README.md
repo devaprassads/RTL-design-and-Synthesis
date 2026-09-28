@@ -85,9 +85,9 @@ synth -top <top_module>
 dfflibmap -liberty ../library/<liberty_file>.lib
 abc -liberty ../library/<liberty_file>.lib
 clean
-flatten          # optional, for hierarchical designs
+flatten          # use for hierarchical designs
 write_verilog -noattr <design>_net.v
-show             # view the synthesized netlist
+show             # to view the synthesized netlist
 ```
 
 ### 3. Gate-level simulation
