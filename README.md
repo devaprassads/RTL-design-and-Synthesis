@@ -1,1 +1,0 @@
-# RTL-design-and-Synthesis
