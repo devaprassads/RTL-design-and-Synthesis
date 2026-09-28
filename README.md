@@ -14,55 +14,55 @@ A collection of Verilog designs and experiments covering the RTL-to-gate-level f
 
 ## Repository Structure
 
-Each folder holds the Verilog design, its testbench, and the related synthesis output for the experiment.
+Each folder holds the Verilog design, its testbench, and the related synthesis output for one experiment.
 
 ### Combinational logic and multiplexers
 | Folder | Description |
 |---|---|
-| `good_mux` | 2:1 mux written with a clean `if/else` style |
-| `bad_mux` | Mux with a problematic coding style, kept for comparison |
-| `ternary_operator_mux` | Mux implemented with the `?:` operator |
-| `mux_generate` | Parameterized mux built with a `generate` loop |
-| `demux_case` | Demux using a `case` statement |
-| `demux_generate` | Demux built with a `generate` loop |
+| [`good_mux`](good_mux/) | 2:1 mux written with a clean `if/else` style |
+| [`bad_mux`](bad_mux/) | Mux with a problematic coding style, kept for comparison |
+| [`ternary_operator_mux`](ternary_operator_mux/) | Mux implemented with the `?:` operator |
+| [`mux_generate`](mux_generate/) | Parameterized mux built with a `generate` loop |
+| [`demux_case`](demux_case/) | Demux using a `case` statement |
+| [`demux_generate`](demux_generate/) | Demux built with a `generate` loop |
 
 ### Conditional coding styles (latch inference)
 | Folder | Description |
 |---|---|
-| `incomplete_if`, `incomplete_if2` | `if` statements without a full `else`, leading to inferred latches |
-| `incomplete_case` | `case` with missing branches |
-| `partial_case` | `case` where only some outputs are assigned |
-| `complete_case` | Fully specified `case` (no latches) |
-| `bad_case` | Poorly written `case` for comparison |
+| [`incomplete_if`](incomplete_if/), [`incomplete_if2`](incomplete_if2/) | `if` statements without a full `else`, leading to inferred latches |
+| [`incomplete_case`](incomplete_case/) | `case` with missing branches |
+| [`partial_case`](partial_case/) | `case` where only some outputs are assigned |
+| [`complete_case`](complete_case/) | Fully specified `case` (no latches) |
+| [`bad_case`](bad_case/) | Poorly written `case` for comparison |
 
 ### Sequential logic
 | Folder | Description |
 |---|---|
-| `dff_asyncres` | D flip-flop with asynchronous reset |
-| `dff_async_set` | D flip-flop with asynchronous set |
-| `dff_syncres` | D flip-flop with synchronous reset |
-| `dff_asyncres_syncres` | D flip-flop with both asynchronous and synchronous reset |
-| `dff_const` | Flip-flop with constant inputs, used to observe synthesis optimization |
-| `counter` | Counter design |
-| `blocking_caveat` | Blocking vs. non-blocking assignment pitfalls |
+| [`dff_asyncres`](dff_asyncres/) | D flip-flop with asynchronous reset |
+| [`dff_async_set`](dff_async_set/) | D flip-flop with asynchronous set |
+| [`dff_syncres`](dff_syncres/) | D flip-flop with synchronous reset |
+| [`dff_asyncres_syncres`](dff_asyncres_syncres/) | D flip-flop with both asynchronous and synchronous reset |
+| [`dff_const`](dff_const/) | Flip-flop with constant inputs, used to observe synthesis optimization |
+| [`counter`](counter/) | Counter design |
+| [`blocking_caveat`](blocking_caveat/) | Blocking vs. non-blocking assignment pitfalls |
 
 ### Arithmetic
 | Folder | Description |
 |---|---|
-| `mult_2`, `mult_8` | Multiplication by constants (2 and 8), showing how synthesis reduces them to wiring/shifts |
-| `ripple_carry_adder` | Ripple-carry adder |
+| [`mult_2`](mult_2/), [`mult_8`](mult_8/) | Multiplication by constants (2 and 8), showing how synthesis reduces them to wiring/shifts |
+| [`ripple_carry_adder`](ripple_carry_adder/) | Ripple-carry adder |
 
 ### Optimization and hierarchy
 | Folder | Description |
 |---|---|
-| `opt_check`, `opt_check2`, `opt_check3`, `opt_check4` | Small designs used to observe combinational/sequential optimizations in Yosys |
-| `multiple_modules` | Hierarchical design with several modules |
-| `multiple_module_opt` | Hierarchical design used to study optimization across module boundaries |
+| [`opt_check`](opt_check/), [`opt_check2`](opt_check2/), [`opt_check3`](opt_check3/), [`opt_check4`](opt_check4/) | Small designs used to observe combinational/sequential optimizations in Yosys |
+| [`multiple_modules`](multiple_modules/) | Hierarchical design with several modules |
+| [`multiple_module_opt`](multiple_module_opt/) | Hierarchical design used to study optimization across module boundaries |
 
 ### Library
 | Folder | Description |
 |---|---|
-| `library` | Standard-cell liberty file(s) used for technology mapping |
+| [`library`](library/) | Standard-cell liberty file(s) used for technology mapping |
 
 ## How to Run
 
