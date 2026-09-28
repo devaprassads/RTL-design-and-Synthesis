@@ -6,10 +6,10 @@ A collection of Verilog designs and experiments covering the RTL-to-gate-level f
 
 | Stage | Tool |
 |---|---|
-| RTL simulation | Icarus Verilog (`iverilog`) |
+| RTL simulation | Icarus Verilog |
 | Waveform viewing | GTKWave |
 | Logic synthesis | Yosys |
-| Standard-cell library | SKY130 (`library/`) |
+| Standard-cell library | SKY130 |
 | GLS (gate-level simulation) | Icarus Verilog with the synthesized netlist |
 
 ## Repository Structure
