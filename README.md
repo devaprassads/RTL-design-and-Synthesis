@@ -1,6 +1,6 @@
 # RTL Design and Synthesis
 
-A collection of small Verilog designs and experiments covering the RTL-to-gate-level flow: writing RTL, simulating it, synthesizing it, and comparing the synthesized netlist against the original design. The focus is on understanding how coding style (latches, incomplete conditionals, blocking vs. non-blocking assignments, etc.) affects what the synthesizer generates.
+A collection of Verilog designs and experiments covering the RTL-to-gate-level flow: writing RTL, simulating it, synthesizing it, and comparing the synthesized netlist against the original design. The focus is on understanding how coding style affects what the synthesizer generates.
 
 ## Toolchain
 
@@ -14,7 +14,7 @@ A collection of small Verilog designs and experiments covering the RTL-to-gate-l
 
 ## Repository Structure
 
-Each folder holds the Verilog design, its testbench, and the related synthesis output for one experiment.
+Each folder holds the Verilog design, its testbench, and the related synthesis output for the experiment.
 
 ### Combinational logic and multiplexers
 | Folder | Description |
@@ -66,13 +66,6 @@ Each folder holds the Verilog design, its testbench, and the related synthesis o
 
 ## How to Run
 
-Clone the repository:
-
-```bash
-git clone https://github.com/devaprassads/RTL-design-and-Synthesis.git
-cd RTL-design-and-Synthesis
-```
-
 ### 1. Simulate the RTL
 
 ```bash
@@ -118,6 +111,3 @@ Compare the GLS waveform with the RTL waveform to confirm the netlist matches th
 ## Author
 
 **Deva Prassad S**
-B.Tech Electronics and Communication Engineering, IIIT Kottayam
-
-GitHub: [@devaprassads](https://github.com/devaprassads)
