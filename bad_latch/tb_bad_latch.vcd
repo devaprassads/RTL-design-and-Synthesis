@@ -1,0 +1,91 @@
+$date
+	Sun Oct 18 17:46:49 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_bad_latch $end
+$var wire 1 ! q $end
+$var reg 1 " clk $end
+$var reg 1 # d $end
+$var reg 1 $ reset $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 1 # d $end
+$var wire 1 $ reset $end
+$var reg 1 ! q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1$
+0#
+0"
+0!
+$end
+#15000
+0$
+#20000
+1"
+#23000
+1#
+#40000
+0"
+#46000
+0#
+#60000
+1"
+#69000
+1#
+#80000
+0"
+#92000
+0#
+#100000
+1"
+#115000
+1#
+#120000
+0"
+#138000
+0#
+#140000
+1"
+#160000
+0"
+#161000
+1#
+#180000
+1!
+1"
+#184000
+0#
+#200000
+0"
+#207000
+1#
+#220000
+1"
+#230000
+0#
+#240000
+0"
+#253000
+1#
+#260000
+1"
+#276000
+0#
+#280000
+0"
+#299000
+1#
+#300000
+1"
